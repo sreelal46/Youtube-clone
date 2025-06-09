@@ -1,0 +1,200 @@
+
+
+.header-all-container
+{
+  z-index: 1000;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 80px 40px;
+  /* display: flex;
+  flex-direction: column; */
+  position: fixed;
+}
+
+.header-top
+{
+  flex: 1;
+background-color: rgba(255, 255, 255, 0.979);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+.header-left-section
+{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+
+}
+
+.header-menu
+{
+  margin-left: 40px;
+  height: 20px;
+}
+
+.header-left-section img
+{
+  margin-left: 20px;
+  height: 23px;
+}
+
+.header-left-section p
+{
+  font-size: 10px;
+  margin-top: -20px;
+}
+
+.header-midile-section
+{
+  flex: 1;
+}
+
+.header-midile-section {
+  display: flex;
+  align-items: center;
+}
+/* Input style */
+.search-bar {
+  padding-left: 40px; /* leave space for icon */
+  width: 450px;
+  height: 43px;
+  border: 0.5px solid #ccc;
+  border-right: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* When input is focused: expand + show icon */
+.search-bar:focus {
+  width: 550px;
+}
+
+.search-bar:focus + .search-left-icon {
+  opacity: 1;
+}
+
+/* Search button */
+.search-icon {
+  width: 55px;
+  height: 43px;
+  border: 0.5px solid #ccc;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Voice button */
+.voice-search {
+  border: 0.5px solid #ccc;
+  height: 43px;
+  width: 43px;
+  margin-left: 20px;
+  border-radius: 22px;
+}
+
+/* Icon size */
+.header-midile-section img {
+  height: 25px;
+}
+
+
+
+
+
+
+
+
+
+.header-right-section
+{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: right;
+  margin-right: 30px;
+}
+.header-element-1 button {
+  display: flex;              
+  align-items: center;  
+  gap: 5px;                      
+  border: 1px solid #ccc;
+  font-size: 12px;
+  font-weight: 600;
+  border-style: none;
+  border-radius: 50px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.header-element-1 img {
+  height: 15px;
+}
+
+
+.header-element-2 img
+{position: relative;
+  height: 30px;
+}
+
+.header-element-2 div
+{
+  color: #ffffff;
+  position: absolute;
+  bottom: 79px;
+  right: 82px;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: #e1002d;
+  border-radius: 10px;
+  height: 16px;
+  width: 16px;
+  text-align: center;
+}
+.header-element-3 img
+{
+height: 30px;
+  border-radius: 25px;
+}
+
+.header-suggestion
+{
+  flex: 1;
+background-color: rgba(255, 255, 255, 0.979);
+
+}
+.header-suggestion-container
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 15px;
+}
+
+.header-suggestion-container div
+{
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 8px;
+background-color: rgba(0, 0, 0, 0.05);
+}
+
+.header-suggestion-container div.active {
+  background-color: black;
+  color: white;
+}
