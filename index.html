@@ -708,32 +708,6 @@
     </div>
   </main>
 
-
-
-  <!-- <script>
-  function colorChange()
-  {
-    const changeElement = document.querySelector('.header-suggestion-container div');
-    changeElement.addEventListener('click',function()
-  {
-    document.getElementsByClassName(changeElement).style.color='white';
-    document.getElementsByClassName(changeElement).style.backgroundColor='black';
-  });
-  }
-</script> -->
-  <script>
-    const suggestions = document.querySelectorAll('.header-suggestion-container div');
-
-    suggestions.forEach((item) => {
-      item.addEventListener('click', () => {
-        // Remove 'active' from all
-        suggestions.forEach(el => el.classList.remove('active'));
-        // Add 'active' to clicked one
-        item.classList.add('active');
-      });
-    });
-  </script>
-
 </body>
 
 </html>
